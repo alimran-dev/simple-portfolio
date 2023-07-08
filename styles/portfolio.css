@@ -12,7 +12,7 @@ body {
     color: white;
     font-size: 20px;
     font-weight: 700px;
-    padding: 15px 35px;
+    padding: 10px 30px;
 }
 .section-title{
     color: #181818;
@@ -147,4 +147,41 @@ main{
 .resume-cv-btn{
     display: block;
     margin: 15px auto;
+}
+/* footer styles starts here  */
+footer {
+    background-color: #FFF8F3;
+    padding: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-column{
+    max-width: 50%;
+}
+.footer-description{
+    font-size: 15px;
+    max-width: 70%;
+    padding: 10px 0;
+}
+.form-primary-field{
+    display: block;
+    margin: 10px 0px;
+    padding: 10px 20px;
+    height: 20px;
+    width: 250px;
+    color: #757575;
+
+}
+.form-textarea{
+    color: #757575;
+    font-size: 18px;
+    height: 120px;
+    width: 250px;
+    resize: none;
+    display: block;
+    padding: 10px 20px;
+}
+.submit-btn{
+    margin: 10px auto;
+    text-align: center;
 }
