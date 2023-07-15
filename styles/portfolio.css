@@ -2,10 +2,12 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
-.text-primary{
+
+.text-primary {
     color: #FD6E0A;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #FD6E0A;
     border-radius: 5px;
     border: 0;
@@ -14,17 +16,20 @@ body {
     font-weight: 700px;
     padding: 10px 30px;
 }
-.section-title{
+
+.section-title {
     color: #181818;
     font-size: 35px;
     text-align: center;
 }
-.section-description{
+
+.section-description {
     font-size: 18px;
     font-weight: 400px;
     line-height: 30px;
     text-align: center;
 }
+
 /* nav related style */
 nav {
     display: flex;
@@ -38,116 +43,142 @@ nav {
     font-size: 45px;
     font-weight: 800;
 }
-nav > ul {
+
+nav>ul {
     display: flex;
     align-items: center;
 }
+
 nav li {
     list-style: none;
     margin-right: 50px;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: #474747;
     font-size: 20px;
 }
+
 /* header related styles  */
 .header {
     background-color: #FFF8F3;
-    background-image: url('../assets/images/header_bg.png'),url('../assets/images/developer.png');
+    background-image: url('../assets/images/header_bg.png'), url('../assets/images/developer.png');
     background-repeat: no-repeat;
-    background-position: bottom right,25px 25px;
-    background-size: 600px,70px;
+    background-position: bottom right, 25px 25px;
+    background-size: 600px, 70px;
 }
-.banner{
+
+.banner {
     padding: 50px 35px 0px 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.banner-container{
+
+.banner-container {
     max-width: 400px;
 }
-.banner-greetings{
+
+.banner-greetings {
     font-size: 25px;
     color: #474747;
     margin-bottom: 0;
 }
-.banner-title{
+
+.banner-title {
     font-size: 50px;
     font-weight: 700px;
     margin-top: 5px;
     margin-bottom: 0;
 }
-.profile-pic{
+
+.profile-pic {
     width: 400px;
 }
-.banner-description{
+
+.banner-description {
     font-size: 14px;
     margin-top: 5px;
 }
+
 /* main section starts  */
-main{
+main {
     max-width: 1000px;
     margin: 0 auto;
 }
+
 /* about section starts */
-.about{
+.about {
     background-color: #FFF8F3;
     padding: 150px;
     margin: 130px 0;
 }
-.about-info-container{
+
+.about-info-container {
     display: flex;
     justify-content: space-around;
 }
-.about-info{
+
+.about-info {
     text-align: center;
     margin-bottom: 0px;
 }
-.info-description{
+
+.info-description {
     margin-top: 2px;
 }
-#what-i-do-description{
+
+#what-i-do-description {
     padding: 20px 150px;
 }
+
 /* skills related styles  */
-.skills-container{
+.skills-container {
     display: flex;
     gap: 24px;
     margin: 0 30px;
 }
-.skill{
+
+.skill {
     padding: 30px;
-    box-shadow:  0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
 }
-.skill-description{
+
+.skill-description {
     color: #757575;
 }
+
 /* Resume section styles  */
-.resume-column-title{
+.resume-column-title {
     font-size: 18px;
     color: #474747;
 }
-.resume-container{
+
+.resume-container {
     display: flex;
     gap: 71px;
 }
-.resume-item-title{
+
+.resume-item-title {
     color: #474747;
     font-size: 20px;
 }
-.resume-item-institute{
+
+.resume-item-institute {
     color: #474747;
     font-size: 14px;
 }
-.resume-item-description{
+
+.resume-item-description {
     color: #757575;
 }
-.resume-cv-btn{
+
+.resume-cv-btn {
     display: block;
     margin: 15px auto;
 }
+
 /* footer styles starts here  */
 footer {
     background-color: #FFF8F3;
@@ -155,24 +186,29 @@ footer {
     display: flex;
     justify-content: space-around;
 }
-.footer-column{
+
+.footer-column {
     max-width: 50%;
 }
-.footer-description{
+
+.footer-description {
     font-size: 15px;
     max-width: 70%;
     padding: 10px 0;
 }
-.form-primary-field{
+
+.form-primary-field {
     display: block;
     margin: 10px 0px;
     padding: 10px 20px;
     height: 20px;
     width: 250px;
     color: #757575;
-
+    border: 1px solid #757575;
+    border-radius: 5px;
 }
-.form-textarea{
+
+.form-textarea {
     color: #757575;
     font-size: 18px;
     height: 120px;
@@ -180,8 +216,102 @@ footer {
     resize: none;
     display: block;
     padding: 10px 20px;
+    border: 1px solid #757575;
+    border-radius: 5px;
 }
-.submit-btn{
+
+.submit-btn {
     margin: 10px auto;
     text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+/* Responsive related styles here  */
+/* small devices related styles here  */
+@media screen and (max-width:572px) {
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    nav{
+        margin: 20px;
+    }
+    nav li{
+        margin-right: 5px;
+    }
+    nav>ul{
+        width: fit-content;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .banner{
+        flex-direction: column;
+        padding: 20px 0px 0px 20px;
+    }
+    .header{
+        background-image: none;
+    }
+    .profile-pic{
+        width: 100%;
+    }
+    /* about section  */
+    .about{
+        padding: 20px;
+        margin: 50px 0px;
+    }
+    .about-info-container{
+        flex-direction: column;
+    }
+    /* what i do section  */
+    #what-i-do-description {
+        padding: 15px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        margin: 0px 5px;
+    }
+
+    /* resume section  */
+    .resume-container {
+        flex-direction: column;
+    }
+
+    .resume-column {
+        padding: 0px 15px;
+    }
+
+    /* footer section  */
+    footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer-column {
+        max-width: 100%;
+    }
+
+    .social-icon,
+    .footer-description,
+    .footer-column-title {
+        text-align: center;
+        margin: auto;
+    }
+
+    .footer-description {
+        max-width: 90%;
+    }
+
+    .form-textarea,
+    .form-primary-field {
+        margin: 10px;
+    }
+
+    .submit-btn {
+        display: block;
+    }
 }
