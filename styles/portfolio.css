@@ -202,7 +202,7 @@ footer {
     margin: 10px 0px;
     padding: 10px 20px;
     height: 20px;
-    width: 250px;
+    width: 65vw;
     color: #757575;
     border: 1px solid #757575;
     border-radius: 5px;
@@ -212,7 +212,7 @@ footer {
     color: #757575;
     font-size: 18px;
     height: 120px;
-    width: 250px;
+    width: 65vw;
     resize: none;
     display: block;
     padding: 10px 20px;
@@ -308,7 +308,7 @@ footer {
 
     .form-textarea,
     .form-primary-field {
-        margin: 10px;
+        margin: 10px auto;
     }
 
     .submit-btn {
